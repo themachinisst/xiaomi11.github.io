@@ -18,8 +18,8 @@ body{
 }
 
 @media screen and (max-width:767px){
-    body{
-       width: 100vw;
+    .cont{
+        height:160vh;
     }
 }
 
