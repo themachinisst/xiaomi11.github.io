@@ -2,6 +2,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+/*For testing purpose
+* { outline: 1px red solid !important; visibility: visible !important }
+*/
+
 body{
     background-color: black;
     margin: 0;
@@ -9,7 +13,7 @@ body{
 
 .cont{
     /*max-width: 600px;*/
-    width: 600px;
+    width:  600px;
     height:100vh;
     margin: auto;
     position: relative;
@@ -20,7 +24,8 @@ body{
 
 @media screen and (max-width:767px){
     .cont{
-        height:160vh;
+        height:100vh;
+        width: 100vw;
     }
 }
 
@@ -34,24 +39,57 @@ body{
     float: right;
 }
 
+@media screen and (max-width:767px){
+    .header-logo{
+        margin-right: 2vw;
+    }
+}
+
 .main-cont{
     height:40vh;
-    width: 80vh;
+    width: 39vw;
     position: relative;
     top:3%;
+    align-items: center;
 }
+
+@media screen and (max-width:767px){
+    .main-cont{
+        height:40vh;
+        width: 100vw;
+    }
+}
+
 
 .text-cont{
     text-align: center;
     color: white;
     font-size: 6vh;
+    word-spacing: 0.5em;
+}
+
+@media screen and (max-width:767px){
+    .text-cont{
+        font-size: 4vh;
+        word-spacing: 0.2em;
+    }
 }
 
 .play-but-cont{
-    left:38%;
-    top:60%;
+    left:35%;
+    top:70%;
     position: absolute;
 }
+
+@media screen and (max-width:767px){
+    .play-but-cont{
+        left:31%;
+        top:50%;
+        position: absolute;
+    }
+    
+}
+
 
 .play-but{
     height:8vh;
@@ -63,7 +101,7 @@ body{
     border-radius: 35px;
     border-color: white;
     opacity: 0.8;
-    font-size: 150%;
+    font-size: 1.4em;
     
     color: rgb(255, 255, 255);
    /* box-shadow:
@@ -78,6 +116,13 @@ body{
 
       */
 
+}
+
+@media screen and (max-width:767px){
+    .play-but{
+        font-size: 1.3em;
+    }
+    
 }
 
 @keyframes flicker {
