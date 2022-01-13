@@ -1,0 +1,115 @@
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+	/* Heading */
+    .game-title{
+		color: rgb(255, 255, 255);
+		font-size: 45px;
+
+        color: rgb(255, 255, 255);
+        text-shadow:
+           0 0 7px #fff,
+           0 0 10px #fff,
+           0 0 21px #fff,
+           0 0 42px rgb(0, 195, 255),
+           0 0 82px rgb(0, 132, 255),
+           0 0 92px rgb(0, 140, 255),
+           0 0 102px rgb(0, 89, 255),
+           0 0 151px rgb(0, 119, 255);
+	}
+
+	/* 3*3 Grid */
+	#b1, #b2, #b3, #b4, #b5,
+	#b6, #b7, #b8, #b9 {
+		width: 80px;
+		height: 52px;
+		margin: auto;
+		/*border: 1px solid gray;*/
+        background-color: transparent;
+        border: 1px solid rgb(0, 119, 255);
+        border-radius: 6px;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	/* Reset Button */
+	#but {
+		box-sizing: border-box;
+		width: 95px;
+		height: 40px;
+		/*border: 1px solid dodgerblue;
+		margin: auto;
+		border-radius: 4px;
+		
+		background-color: dodgerblue;
+		color: white;
+        */
+		font-size: 20px;
+		cursor: pointer;
+
+        background-color: rgb(255, 255, 255);/*transparent;*/
+        /*background-image: url('img/box.png');*/
+        /*background-size: 100% 100%;*/
+        border-radius: 35px;
+        border-color: white;
+        opacity: 0.8;
+        font-size: 1.4em;
+
+        color: black;/*rgb(255, 255, 255);*/
+       box-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px rgb(0, 195, 255),
+          0 0 82px rgb(0, 132, 255),
+          0 0 92px rgb(0, 140, 255),
+          0 0 102px rgb(0, 89, 255),
+          0 0 151px rgb(0, 119, 255);
+	}
+
+	/* Player turn space */
+	#print {
+
+		color: dodgerblue;
+		font-size: 20px;
+	}
+
+	/* Main Container */
+	#main {
+		text-align: center;
+	}
+
+	/* Game Instruction Text */
+
+
+	#ins {
+			
+        color: white;
+		font-size: 17px;
+       
+	}
+
+    @keyframes flicker {
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+          text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px rgb(0, 195, 255),
+            0 0 82px rgb(0, 132, 255),
+            0 0 92px rgb(0, 140, 255),
+            0 0 102px rgb(0, 89, 255),
+            0 0 151px rgb(0, 119, 255);
+    
+        }
+        20%, 24%, 55% {       
+          text-shadow: none;
+        }
+      }
+    
+      .game-title{
+        animation: flicker 3s infinite alternate;     
+      }
+    
