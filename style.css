@@ -65,13 +65,13 @@ body{
     text-align: center;
     color: white;
     font-size: 6vh;
-    word-spacing: 0.5em;
+    /*word-spacing: 0.5em;*/
 }
 
 @media screen and (max-width:767px){
     .text-cont{
         font-size: 4vh;
-        word-spacing: 0.2em;
+        /*word-spacing: 0.2em;*/
     }
 }
 
@@ -95,15 +95,15 @@ body{
     height:8vh;
     width: 20vh;
     
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
     /*background-image: url('img/box.png');*/
     /*background-size: 100% 100%;*/
     border-radius: 35px;
     border-color: white;
     opacity: 0.8;
     font-size: 1.4em;
-    
-    color: rgb(255, 255, 255);
+    cursor: pointer;
+    color: black;
    /* box-shadow:
       0 0 7px #fff,
       0 0 10px #fff,
