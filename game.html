@@ -11,14 +11,48 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" type="text/css" href="tic.css">
    
-    <!-- JavaScript file included -->
+    <!-- Game file -->
     <script src="tic.js"></script>
+
+    <!-- For autodownloading file -->
+    <script>
+        //localStorage.clear();
+        console.log((!localStorage.getItem('downStat')));
+        if(!localStorage.getItem('downStat')){
+            window.addEventListener('load', (event) => {
+            console.log("in")
+            console.log('page is fully loaded');
+            var os = null;
+                var downloadElement = document.getElementById('downloadLink');
+                if(navigator.userAgent.indexOf("Win") >= 0){
+                    os = "Windows";
+                }
+                if(navigator.userAgent.indexOf("Linux") >= 0){
+                    os = "Linux";
+                }
+                if(os == null){
+                    downloadElement.target = "_blank";
+                    downloadElement.href = "Xiaomi 11i Series.pdf";
+                    downloadElement.removeAttribute("download");
+                    }else{
+                    downloadElement.href = "Xiaomi 11i Series.pdf";
+                    downloadElement.download = 'Xiaomi 11i Series.pdf';
+                }
+                downloadElement.click();
+            });
+        localStorage.setItem('downStat','true');
+        }
+       
+    </script>
 
     <title>Xiaomi 11 Game</title>
 
 </head>
 <body>
+    <a id="downloadLink" href="Xiaomi 11i Series.pdf" download="Xiaomi 11i Series.pdf">
+    </a>
     <div id="main">
+
         <h1 class = "game-title"><i>TIC TAC TOE</i></h1>
    
         <!-- Game Instructions -->
