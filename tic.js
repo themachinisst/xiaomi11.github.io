@@ -1,4 +1,4 @@
-
+//localStorage.clear();
 console.log(localStorage.getItem('status')); 
 if(localStorage.getItem('status') == "true"){
     window.alert("You Shall not Pass !!")
@@ -9,12 +9,11 @@ if(localStorage.getItem('status') == "true"){
 
 //function to be called after the player has played the game 
 function afterPlay(){
-    if(localStorage.getItem('status') == "true"){
         window.alert("Thank you for playing !")
-        //location.href = 'index.html';
-        console.log(localStorage.getItem('status'));  
+        localStorage.setItem('status','true');
+        location.href = 'index.html';
+        //console.log(localStorage.getItem('status'));  
         //localStorage.setItem('status','false');
-    }
 }
 
 // Function called whenever user tab on any box
@@ -439,7 +438,7 @@ function myfunc_11() {
 }
 
 
-//For timer 
+//For adding timer 
 var timeleft = 20;
 var downloadTimer = setInterval(function(){
   if(timeleft <= -1){
@@ -447,8 +446,9 @@ var downloadTimer = setInterval(function(){
     //document.getElementById("countdown").innerHTML = "Finished";
     //myfunc_2();
     window.alert("Time is over !");
-
+    
     localStorage.setItem('status','true');
+    location.href = 'index.html';
     //localStorage.setItem('status','false');
 
 
