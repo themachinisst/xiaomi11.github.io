@@ -1,3 +1,22 @@
+
+console.log(localStorage.getItem('status')); 
+if(localStorage.getItem('status') == "true"){
+    window.alert("You Shall not Pass !!")
+    location.href = 'index.html';
+    console.log(localStorage.getItem('status'));  
+    //localStorage.setItem('status','false');
+}
+
+//function to be called after the player has played the game 
+function afterPlay(){
+    if(localStorage.getItem('status') == "true"){
+        window.alert("Thank you for playing !")
+        //location.href = 'index.html';
+        console.log(localStorage.getItem('status'));  
+        //localStorage.setItem('status','false');
+    }
+}
+
 // Function called whenever user tab on any box
 function myfunc() {
  
@@ -28,6 +47,7 @@ function myfunc() {
 
         window.alert('Player X won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b1 == 'x' || b1 == 'X') && (b4 == 'x' ||
         b4 == 'X') && (b7 == 'x' || b7 == 'X')) {
@@ -42,6 +62,7 @@ function myfunc() {
  
         window.alert('Player X won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b7 == 'x' || b7 == 'X') && (b8 == 'x' ||
         b8 == 'X') && (b9 == 'x' || b9 == 'X')) {
@@ -56,6 +77,7 @@ function myfunc() {
         
         window.alert('Player X won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b3 == 'x' || b3 == 'X') && (b6 == 'x' ||
         b6 == 'X') && (b9 == 'x' || b9 == 'X')) {
@@ -69,6 +91,7 @@ function myfunc() {
         document.getElementById("b8").disabled = true;
         window.alert('Player X won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b1 == 'x' || b1 == 'X') && (b5 == 'x' ||
         b5 == 'X') && (b9 == 'x' || b9 == 'X')) {
@@ -82,6 +105,7 @@ function myfunc() {
         document.getElementById("b8").disabled = true;
         window.alert('Player X won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b3 == 'x' || b3 == 'X') && (b5 == 'x' ||
         b5 == 'X') && (b7 == 'x' || b7 == 'X')) {
@@ -95,6 +119,7 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('Player X won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b2 == 'x' || b2 == 'X') && (b5 == 'x' ||
         b5 == 'X') && (b8 == 'x' || b8 == 'X')) {
@@ -108,6 +133,7 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('Player X won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b4 == 'x' || b4 == 'X') && (b5 == 'x' ||
         b5 == 'X') && (b6 == 'x' || b6 == 'X')) {
@@ -121,6 +147,7 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('Player X won');
         myfunc_2();
+        afterPlay();
     }
  
     // Checking of Player X finish
@@ -138,6 +165,7 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('Player 0 won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b1 == '0' || b1 == '0') && (b4 == '0' ||
         b4 == '0') && (b7 == '0' || b7 == '0')) {
@@ -151,6 +179,7 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('Player 0 won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b7 == '0' || b7 == '0') && (b8 == '0' ||
         b8 == '0') && (b9 == '0' || b9 == '0')) {
@@ -164,6 +193,7 @@ function myfunc() {
         document.getElementById("b6").disabled = true;
         window.alert('Player 0 won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b3 == '0' || b3 == '0') && (b6 == '0' ||
         b6 == '0') && (b9 == '0' || b9 == '0')) {
@@ -177,6 +207,7 @@ function myfunc() {
         document.getElementById("b8").disabled = true;
         window.alert('Player 0 won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b1 == '0' || b1 == '0') && (b5 == '0' ||
         b5 == '0') && (b9 == '0' || b9 == '0')) {
@@ -190,6 +221,7 @@ function myfunc() {
         document.getElementById("b8").disabled = true;
         window.alert('Player 0 won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b3 == '0' || b3 == '0') && (b5 == '0' ||
         b5 == '0') && (b7 == '0' || b7 == '0')) {
@@ -203,6 +235,7 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('Player 0 won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b2 == '0' || b2 == '0') && (b5 == '0' ||
         b5 == '0') && (b8 == '0' || b8 == '0')) {
@@ -216,6 +249,7 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('Player 0 won');
         myfunc_2();
+        afterPlay();
     }
     else if ((b4 == '0' || b4 == '0') && (b5 == '0' ||
         b5 == '0') && (b6 == '0' || b6 == '0')) {
@@ -229,6 +263,7 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('Player 0 won');
         myfunc_2();
+        afterPlay();
     }
  
     // Checking of Player 0 finish
@@ -243,6 +278,7 @@ function myfunc() {
                 .innerHTML = "Match Tie";
             window.alert('Match Tie');
             myfunc_2();
+            afterPlay();
     }
     else {
  
@@ -409,12 +445,20 @@ var downloadTimer = setInterval(function(){
   if(timeleft <= -1){
     clearInterval(downloadTimer);
     //document.getElementById("countdown").innerHTML = "Finished";
-    window.alert("Finished");
+    //myfunc_2();
+    window.alert("Time is over !");
+
+    localStorage.setItem('status','true');
+    //localStorage.setItem('status','false');
+
+
+    //console.log(localStorage.getItem('status')); 
   } else {
     document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
-    console.log(timeleft)
+    //console.log(timeleft)
     
   }
   document.getElementById("countdown").style.color = "tomato";
   timeleft -= 1;
 }, 1000);
+
